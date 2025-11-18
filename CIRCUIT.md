@@ -1,19 +1,16 @@
-# Design & Fab — Bundle Flow
+# Circuit Design Simulation And Pcb Fabrication Bundle — Circuit Notes
 
-- Course: Circuit Design, Simulation and PCB Fabrication Bundle
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/circuit-design-simulation-and-pcb-manufacturing-bundle/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Steps
+## Wiring Checklist
 
-- Design → Simulate → Layout → DRC → Gerber → Fab → Assemble.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
-Design -> Sim -> PCB -> DRC -> Gerber -> Fab -> ASM
-```
-
-## Purchase With Discount
-
-Get a discounted price and deliver end-to-end hardware — use the link above.
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
